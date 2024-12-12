@@ -1,0 +1,27 @@
+<header class="header">
+  <nav class="navbar navbar-expand-sm">
+    <ul>
+      <li>
+        <a class="nav-link" routerLink="employees" routerLinkActive="active"
+          >Employee List</a
+        >
+      </li>
+      <li><a class="nav-link" routerLink="create-employee">Add Employee</a></li>
+      <li><a class="nav-link" routerLink="employees">Update Employee</a></li>
+      <li><a class="nav-link" routerLink="employees">Delete Employee</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <h1 class="text-center">{{ title }}</h1>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <span>© 2024 Tushar Tari. All Rights Reserved.</span>
+  </div>
+</footer>
